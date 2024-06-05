@@ -12,7 +12,7 @@ const CustomSafeAreaView = ({
 }) => {
   return (
     <SafeAreaView
-      className={`flex-1 bg-bgLight dark:bg-black ${className}`}
+      className={`flex-1 w-full bg-white p-4 ${className}`}
       edges={edges}
     >
       {children}
