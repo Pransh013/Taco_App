@@ -11,6 +11,7 @@ import { BackHandler, Platform, Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 import { StatusBar } from "expo-status-bar";
+import Header from "@/components/Header";
 
 const Tab = createBottomTabNavigator();
 
@@ -51,8 +52,8 @@ const TabsLayout = () => {
   );
 
   return (
-    <SafeAreaView className="flex-1">
-      {/* <Header /> */}
+    <SafeAreaView className="flex-1" edges={["right", "top", "left"]}>
+      <Header />
       <Tab.Navigator
         initialRouteName="home"
         screenOptions={{
@@ -98,6 +99,13 @@ const TabsLayout = () => {
               />
             ),
           }}
+          listeners={() => ({
+            tabPress: (e) => {
+              if (true) {
+                e.preventDefault();
+              }
+            },
+          })}
         />
         <Tab.Screen
           name="appointment"
@@ -115,6 +123,13 @@ const TabsLayout = () => {
               />
             ),
           }}
+          listeners={() => ({
+            tabPress: (e) => {
+              if (true) {
+                e.preventDefault();
+              }
+            },
+          })}
         />
 
         <Tab.Screen

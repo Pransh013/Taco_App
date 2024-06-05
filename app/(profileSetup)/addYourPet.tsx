@@ -119,7 +119,7 @@ export default function addYourPet() {
         <View className=" items-center">
           <View className=" w-[130px]    border border-midnight rounded-full">
             <Image
-              source={require("@assets/images/puppy.jpeg")}
+              source={require("@assets/images/dog2.jpg")}
               className="rounded-full h-32 w-32"
               resizeMode="contain"
             />
@@ -143,13 +143,15 @@ export default function addYourPet() {
           className="rounded p-2 mb-2"
           textAlignVertical="top"
         />
-        <Button
-          title="Submit"
-          color={Colors.midnight}
-          onPress={() => {
-            router.push("editProfile");
-          }}
-        />
+        <View className="mb-8">
+          <Button
+            title="Submit"
+            color={Colors.midnight}
+            onPress={() => {
+              router.push("home");
+            }}
+          />
+        </View>
       </ScrollView>
     </SafeAreaView>
   );
