@@ -15,7 +15,7 @@ module.exports = {
         lightgray: "#1E1E1E",
         midnight: "#121063", //darkblue
         bgDark: "#212121",
-        bgLight: "#EEEEEE",
+        bgLight: "#FFFFFF",
       },
     },
   },
