@@ -5,8 +5,7 @@ import { Ionicons } from "@expo/vector-icons";
 import { router } from "expo-router";
 import { styled } from "nativewind";
 import { useState } from "react";
-import { Image } from "react-native";
-import { View, Text, TextInput, Button, Alert, Pressable } from "react-native";
+import { Image, Pressable, Text, View } from "react-native";
 
 const SocialButton = styled(
   Pressable,

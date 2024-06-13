@@ -1,8 +1,8 @@
-import { View, Text, Image } from "react-native";
-import React from "react";
 import CustomSafeAreaView from "@/components/CustomSafeAreaView";
 import WelcomeInstructions from "@/components/WelcomeInstructions";
 import images from "@/constants/images";
+import React from "react";
+import { Image, Text, View } from "react-native";
 
 const WelcomeScreen = () => {
   return (

@@ -59,7 +59,7 @@ const PetInfo = () => {
         <CustomPicker
           options={speciesOptions}
           selectedValue={petform.species}
-          onValueChange={(itemValue) =>
+          onValueChange={(itemValue: any) =>
             setPetForm({ ...petform, species: itemValue })
           }
         />
@@ -68,7 +68,7 @@ const PetInfo = () => {
         <CustomPicker
           options={breedOptions}
           selectedValue={petform.breed}
-          onValueChange={(itemValue) =>
+          onValueChange={(itemValue: any) =>
             setPetForm({ ...petform, breed: itemValue })
           }
         />
@@ -77,7 +77,7 @@ const PetInfo = () => {
         <CustomPicker
           options={sizeOptions}
           selectedValue={petform.size}
-          onValueChange={(itemValue) =>
+          onValueChange={(itemValue: any) =>
             setPetForm({ ...petform, size: itemValue })
           }
         />
@@ -86,7 +86,7 @@ const PetInfo = () => {
         <CustomPicker
           options={genderOptions}
           selectedValue={petform.gender}
-          onValueChange={(itemValue) =>
+          onValueChange={(itemValue: any) =>
             setPetForm({ ...petform, gender: itemValue })
           }
         />
@@ -112,7 +112,7 @@ export default function addYourPet() {
       <CustomHeader
         title="Add Your Pet"
         onLeave={() => {
-          router.replace("index");
+          router.replace("signin");
         }}
       />
       <ScrollView contentContainerStyle={{ flexGrow: 1 }} className=" p-2">
@@ -143,7 +143,7 @@ export default function addYourPet() {
           className="rounded p-2 mb-2"
           textAlignVertical="top"
         />
-        <View className="mb-8">
+        <View className="mb-12">
           <Button
             title="Submit"
             color={Colors.midnight}

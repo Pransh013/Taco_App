@@ -32,7 +32,7 @@ const PetInfo = () => {
         <CustomPicker
           options={genderOptions}
           selectedValue={userform.gender}
-          onValueChange={(itemValue) =>
+          onValueChange={(itemValue: any) =>
             setUserform({ ...userform, gender: itemValue })
           }
         />
